@@ -12,8 +12,11 @@ temp = num
 num2 = 0
 while temp > 0:
     num2 *= 10
+    print("num2:",num2)
     num2 += temp % 10
+    print("num2:",num2)
     temp //= 10
+    print("tmp:",temp)
 if num == num2:
     print('%d是回文数' % num)
 else:

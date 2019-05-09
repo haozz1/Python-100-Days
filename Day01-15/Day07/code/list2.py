@@ -31,6 +31,8 @@ def main():
     print(fruits4)
     fruits5 = fruits[::-1]
     print(fruits5)
+    fruits6 = fruits.reverse()
+    print(fruits6)
 
 
 if __name__ == '__main__':

@@ -17,6 +17,9 @@ class Circle(object):
     def __init__(self, radius):
         self._radius = radius
 
+    # 把一个getter方法变成属性，只需要加上@property就可以了，
+    # 此时，@property本身又创建了另一个装饰器@score.setter，负责把一个setter方法变成属性赋值，于是，我们就拥有一个可控的属性操作
+    # 如果只添加@property 而不添加@xxx.setter ,相当于定义了一个只读属性
     @property
     def radius(self):
         return self._radius

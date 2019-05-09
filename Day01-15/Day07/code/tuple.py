@@ -20,6 +20,7 @@ def main():
     for member in t:
         print(member)
     # 重新给元组赋值
+    # 元组不能给单一元素重新赋值
     # t[0] = '王大锤'      # TypeError
     # 变量t重新引用了新的元组 原来的元组被垃圾回收
     t = ('王大锤', 20, True, '云南昆明')

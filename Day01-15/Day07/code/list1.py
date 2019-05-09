@@ -28,6 +28,7 @@ def main():
     print(fruits)
     # 删除元素
     del fruits[1]
+    # list.pop(index=-1) 默认删除最后一个元素
     fruits.pop()
     fruits.pop(0)
     fruits.remove('apple')
